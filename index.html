@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>CRMEF-Plateforme</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/icon/logo.png" alt="logo"></div>
+			<ul>
+				<li><a href="">Accueil</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a class="active" href="subjects/quiz.html">Classroom</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="recherchez ici..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Se Connecter</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>La beauté de l'apprentissage est que personne ne peut vous l'enlever</p>
+				<h5>L'éducation est le processus qui facilite l'apprentissage ou l'acquisition de connaissances, de compétences, de valeurs, de croyances et d'habitudes. Les méthodes pédagogiques comprennent l'enseignement, la formation, la narration, la discussion et la recherche dirigée !</h5>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.jpg" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<ul>
+				<li><a href="">Accueil</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a class="active" href="subjects/quiz.html">Classroom</a></li>
+			</ul>
+		</div>
+	</header>
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">À propos</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/extra/e3.jpg">
+				</div>
+				<div class="side-text">
+					<h2>Que pensez-vous de nous ?</h2>
+					<p>L'éducation est le processus qui facilite l'apprentissage ou l'acquisition de connaissances, de compétences, de valeurs, de croyances et d'habitudes. Les méthodes pédagogiques comprennent l'enseignement, la formation, la narration, la discussion et la recherche dirigée.<br> Un site Web éducatif peut inclure des sites Web contenant des jeux, des vidéos ou des ressources liées à des sujets qui agissent comme des outils pour améliorer l'apprentissage et compléter l'enseignement en classe. Ces sites Web contribuent à rendre le processus d'apprentissage divertissant et attrayant pour l'étudiant, surtout à notre époque. <br>En utilisant HTML (HyperText Markup Language), CSS (Cascading Style Sheet), JavaScript, nous pouvons rendre l'apprentissage plus facile et intéressant.</p>
+				</div>
+		</div>
+	</div>
+
+
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p></center>
+		</div>
+		<a href="#services_section"><div class="s-card"><img src="images/icon/computer-courses.png"><p>Cours d'informatique en ligne gratuits</p></div></a>
+		<a href="#services_section"><div class="s-card"><img src="images/icon/online-tutorials.png"><p>vidéos éducatives en ligne</p></div></a>
+		<a href="#services_section"><div class="s-card"><img src="images/icon/p3.png"><p>Rapport de performance et de classement</p></div></a>
+		<a href="#services_section"><div class="s-card"><img src="images/icon/discussion.png"><p>Discussion directe avec votre enseignant</p></div></a>
+		<a href="#services_section"><div class="s-card"><img src="images/icon/q1.png"><p>Des Défis quotidiennes pour vous</p></div></a>
+	</div>
+
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">Contactez nous</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+				<label>Prénom <span class="imp">*</span></label><label style="margin-left: 185px">Nom <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Détails supplémentaires</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Envoyer le message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<span>Donnez votre avis</span>
+		<div class="shortdesc2">
+			<p>Merci de nous faire part de vos précieux commentaires</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+				<label>votre nom</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Détails supplémentaires</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Envoyer le message</button>
+			</form>
+		</div>
+	</div>
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">"L'éducation est le passeport pour l'avenir, car demain appartient à ceux qui s'y préparent aujourd'hui." "Votre attitude, pas votre aptitude, déterminera votre altitude." "Si vous pensez que l'éducation coûte cher, essayez l'ignorance." "La seule personne éduquée est celle qui a appris à apprendre... et à changer."</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/logo.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Créé par CHAIOUI Khalil & DAROUECH Meryem.</p>
+				<br><p><img src="images/icon/location.png"> CRMEF<br>Marrakech, Maroc</p><br>
+				<p><img src="images/icon/phone.png"> 06 53 11 07 32<br><img src="images/icon/mail.png">&nbsp; chaiouikhalil@gmail.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Restez Connectés</h1>
+				<div class="border"></div><br>
+				<p>Entrez votre e-mail pour recevoir nos nouvelles et mises à jour.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Entrer votre Email">
+					<input class="btn" type="submit" value="Soumettre">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
