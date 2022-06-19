@@ -95,6 +95,7 @@ function quizt(frame) {
   document.getElementById('f11').style='display: none;';
   document.getElementById('f12').style='display: none;';
   document.getElementById('f13').style='display: none;';
+  document.getElementById('f14').style='display: none;';	
 
   if(frame == 1) document.getElementById('f1').style = 'display: block';
   else if(frame == 2) document.getElementById('f2').style = 'display: block';
@@ -109,6 +110,7 @@ function quizt(frame) {
   else if(frame == 11) document.getElementById('f11').style = 'display: block';
   else if(frame == 12) document.getElementById('f12').style = 'display: block';
   else if(frame == 13) document.getElementById('f13').style = 'display: block';
+  else if(frame == 14) document.getElementById('f14').style = 'display: block';	
   
   else alert('error');
 }
